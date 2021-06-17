@@ -17,5 +17,4 @@ public class EmailValidatorSimple {
         return matcher.matches();
     }
 
-
 }

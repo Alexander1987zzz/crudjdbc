@@ -17,6 +17,7 @@ class UsersDAOImplTest {
         users.add(user);
         assertEquals("Ivanov", "Ivanov");
         assertNotNull(users);
+        assertNotEquals("Petrov", "Ivanov");
         assertFalse(user.getFirstName() == "Masha");
     }
 
@@ -24,6 +25,7 @@ class UsersDAOImplTest {
     void saveUser() {
         User user = new User(1,"Vova", "Ivanov", 33, "email@email.com");
         assertEquals("Vova", user.getFirstName());
+        assertNotEquals("Viva", user.getFirstName());
         assertNotNull(user);
         assertFalse(user.getFirstName() == "Vitya");
     }

@@ -1,11 +1,17 @@
 package com.example.demo.model;
 
+import com.example.demo.regular.EmailValidatorSimple;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class User {
     private int id = 0;
     private String firstName;
     private String secondName;
     private int age;
     private String email;
+   
 
     public User() {}
 
@@ -61,4 +67,6 @@ public class User {
                 ", age=" + age +
                 '}';
     }
+
+
 }
